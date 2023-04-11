@@ -29,18 +29,6 @@ const Home: React.FC = () => {
             <div style={{outline: '1px solid black', width: '25%'}}>
               <Card title="NOTICE" extra={<a href="#">More</a>} style={{ width: '100%' }}>
                 <a style={{fontSize: 19}}>Title 1</a><br />
-                <a style={{fontSize: 19}}>Title 1</a><br />
-                <a style={{fontSize: 19}}>Title 1</a><br />
-                <a style={{fontSize: 19}}>Title 1</a><br />
-                <a style={{fontSize: 19}}>Title 1</a><br />
-                <a style={{fontSize: 19}}>Title 1</a><br />
-                <a style={{fontSize: 19}}>Title 1</a><br />
-                <a style={{fontSize: 19}}>Title 1</a><br />
-                <a style={{fontSize: 19}}>Title 1</a><br />
-                <a style={{fontSize: 19}}>Title 1</a><br />
-                <a style={{fontSize: 19}}>Title 1</a><br />
-                <a style={{fontSize: 19}}>Title 1</a><br />
-                <a style={{fontSize: 19}}>Title 1</a>
               </Card>
             </div>
           </div>
