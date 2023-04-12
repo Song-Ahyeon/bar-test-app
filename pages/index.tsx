@@ -2,6 +2,7 @@ import React from 'react';
 import { Breadcrumb, Button, Card, Descriptions, Layout, Menu, Space, theme } from 'antd';
 import { DesktopOutlined, PieChartOutlined, UserOutlined, LogoutOutlined, ClusterOutlined } from '@ant-design/icons';
 import SearchInput from '@/components/searchInput';
+import LoginModal from '@/components/loginModal';
 
 const { Header, Content, Footer } = Layout;
 
@@ -14,7 +15,7 @@ const Home: React.FC = () => {
     <Layout className="layout">
       <Header style={{display:'flex', justifyContent: 'space-between', alignItems: 'center'}}>
         <div className="logo" />
-        <Button type='primary' onClick={() => alert('login modal')}><LogoutOutlined /> 로그인 / 회원가입</Button>,
+        <LoginModal />
       </Header>
 
       <Content style={{ padding: '0 50px' }}>
@@ -45,7 +46,7 @@ const Home: React.FC = () => {
 
         </div>
       </Content>
-      <Footer style={{ textAlign: 'center' }}>이용약관 | 개인정보 처리방침 | B.A.R ©2023</Footer>
+      <Footer style={{ textAlign: 'center', cursor: 'pointer' }}>이용약관 | 개인정보 처리방침 | B.A.R ©2023</Footer>
     </Layout>
   );
 };
