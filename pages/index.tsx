@@ -1,6 +1,5 @@
 import React from 'react';
-import { Breadcrumb, Button, Card, Descriptions, Layout, Menu, Space, theme } from 'antd';
-import { DesktopOutlined, PieChartOutlined, UserOutlined, LogoutOutlined, ClusterOutlined } from '@ant-design/icons';
+import { Card, Layout, theme } from 'antd';
 import SearchInput from '@/components/searchInput';
 import LoginModal from '@/components/loginModal';
 
@@ -13,10 +12,10 @@ const Home: React.FC = () => {
 
   return (
     <Layout className="layout">
-      <Header style={{display:'flex', justifyContent: 'space-between', alignItems: 'center'}}>
+      {/* <Header style={{display:'flex', justifyContent: 'space-between', alignItems: 'center'}}>
         <div className="logo" />
         <LoginModal />
-      </Header>
+      </Header> */}
 
       <Content style={{ padding: '0 50px' }}>
         <div className="site-layout-content" style={{ background: colorBgContainer }}>
@@ -29,7 +28,7 @@ const Home: React.FC = () => {
 
             <div style={{outline: '1px solid black', width: '25%'}}>
               <Card title="NOTICE" extra={<a href="#">More</a>} style={{ width: '100%' }}>
-                <a style={{fontSize: 19}}>Title 1</a><br />
+              <a style={{fontSize: 19}}>Notice Title 1</a><br />
               </Card>
             </div>
           </div>
@@ -46,7 +45,7 @@ const Home: React.FC = () => {
 
         </div>
       </Content>
-      <Footer style={{ textAlign: 'center', cursor: 'pointer' }}>이용약관 | 개인정보 처리방침 | B.A.R ©2023</Footer>
+      {/* <Footer style={{ textAlign: 'center', cursor: 'pointer' }}>이용약관 | 개인정보 처리방침 | B.A.R ©2023</Footer> */}
     </Layout>
   );
 };

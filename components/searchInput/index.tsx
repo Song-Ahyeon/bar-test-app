@@ -1,4 +1,5 @@
 import { Form, Input, Button } from "antd";
+import router from "next/router";
 import React, { useEffect, useState } from "react";
 
 const SearchInput = () => {
@@ -12,7 +13,10 @@ const SearchInput = () => {
 
     useEffect(() => {
         if(!!searchKeyword){
-            alert(searchKeyword)
+            router.push({
+                pathname: '/search',
+                query: {keyword: searchKeyword}
+            })
         }
     }, [searchKeyword])
 
