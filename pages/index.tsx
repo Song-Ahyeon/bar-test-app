@@ -1,7 +1,6 @@
 import React from 'react';
 import { Card, Layout, theme } from 'antd';
 import SearchInput from '@/components/searchInput';
-import LoginModal from '@/components/loginModal';
 
 const { Header, Content, Footer } = Layout;
 
@@ -12,10 +11,6 @@ const Home: React.FC = () => {
 
   return (
     <Layout className="layout">
-      {/* <Header style={{display:'flex', justifyContent: 'space-between', alignItems: 'center'}}>
-        <div className="logo" />
-        <LoginModal />
-      </Header> */}
 
       <Content style={{ padding: '0 50px' }}>
         <div className="site-layout-content" style={{ background: colorBgContainer }}>
