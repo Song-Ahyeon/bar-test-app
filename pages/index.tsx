@@ -18,7 +18,7 @@ const Home: React.FC = () => {
 
           <div style={{display: 'flex', justifyContent: 'space-between', margin: '10px auto', height: '500px'}}>
             <div style={{outline: '1px solid black', width: '74%', display: 'flex', alignContent: 'center'}}>
-                <p style={{margin: '15px auto', fontSize: 17}}>현재 사람들이 찾는 책이에요</p>
+                <p style={{margin: '15px auto', fontSize: 17, color: 'black'}}>현재 사람들이 찾는 책이에요</p>
             </div>
 
             <div style={{outline: '1px solid black', width: '25%'}}>
@@ -30,11 +30,15 @@ const Home: React.FC = () => {
 
           <div style={{display: 'flex', justifyContent: 'space-between', margin: '10px auto'}}>
             <div style={{outline: '1px solid black', width: '50%', display: 'flex', alignContent: 'center', height: '300px'}}> </div>
-            <div style={{outline: '1px solid black', width: '49%', display: 'flex', alignContent: 'center', height: '300px'}}> </div>
+            <div style={{outline: '1px solid black', width: '49%', display: 'flex', alignContent: 'left', height: '300px'}}> 
+              <p style={{margin: '15px 20px', fontSize: 17, color: 'black'}}>BAR is...</p>
+            </div>
           </div>
 
           <div style={{display: 'flex', justifyContent: 'space-between', margin: '10px auto'}}>
-            <div style={{outline: '1px solid black', width: '50%', display: 'flex', alignContent: 'center', height: '300px'}}> </div>
+            <div style={{outline: '1px solid black', width: '50%', display: 'flex', alignContent: 'left', height: '300px'}}>
+              <p style={{margin: '15px 20px', fontSize: 17, color: 'black'}}>How to Use?</p>
+            </div>
             <div style={{outline: '1px solid black', width: '49%', display: 'flex', alignContent: 'center', height: '300px'}}> </div>
           </div>
 
