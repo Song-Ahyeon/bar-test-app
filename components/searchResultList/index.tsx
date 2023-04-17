@@ -1,3 +1,4 @@
+import router from "next/router";
 import styled, { keyframes, StyledComponentBase } from "styled-components";
 
 const Wrapper = styled.div`
@@ -17,13 +18,21 @@ const Wrapper = styled.div`
 `;
 
 const SearchResultList = (props: any) => {
+
+    const gotoTarget = () => {
+        router.push({
+            pathname: '/target',
+            // query: {keyword: searchKeyword}
+        })
+    }
+    
     return (
         <div style={{padding: '10px 0'}}>
-        <Wrapper>
+        <Wrapper onClick={gotoTarget}>
             <div style={{height: '65px', width: '50px', background: 'white',
                 display: 'flex',
                 alignItems: 'center', alignContent: 'center', marginRight: '10px'}}>
-                <p style={{color: 'black'}}>img</p>
+                <p style={{color: 'black', margin: 'auto'}}>img</p>
             </div>
             <div>
                 <p style={{color: 'black'}}>title: </p>
