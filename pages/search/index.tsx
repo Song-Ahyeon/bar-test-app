@@ -18,6 +18,8 @@ const SearchPage = () => {
         {title: 'title1', author: 'author1', info: 'infotext1'},
         {title: 'title2', author: 'author2', info: 'infotext2'},
         {title: 'title3', author: 'author3', info: 'infotext3'},
+        {title: 'title4', author: 'author4', info: 'infotext4'},
+        {title: 'title5', author: 'author5', info: 'infotext5'},
       ]
     return (
         <>
@@ -32,7 +34,11 @@ const SearchPage = () => {
                     <SearchResultList key={`search_result_${idx}`} props={el} />
                 ))}
             </Wrapper>
-            <Pagination />
+            <div style={{width: '100%', display: 'flex'}}>
+                <div style={{margin: 'auto'}}>
+                    <Pagination/>
+                </div>
+            </div>
         </div>
       </Content>
         </>

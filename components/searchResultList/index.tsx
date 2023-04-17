@@ -22,7 +22,6 @@ const SearchResultList = (props: any) => {
     const gotoTarget = () => {
         router.push({
             pathname: '/target',
-            // query: {keyword: searchKeyword}
         })
     }
     
